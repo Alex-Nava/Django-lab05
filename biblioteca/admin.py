@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Libro, Usuario, Review
+
+admin.register(Libro)
+admin.register(Usuario)
+admin.register(Review)
