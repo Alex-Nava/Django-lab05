@@ -4,7 +4,8 @@ class Libro(models.Model):
     idlibro = models.AutoField(primary_key=True)  
     nombre = models.CharField(max_length=255)    
     autor = models.CharField(max_length=255)     
-    publicacion = models.DateField()             
+    publicacion = models.DateField() 
+    volumen = models.IntegerField(default=0)           
 
     def _str_(self):
         return self.nombre
